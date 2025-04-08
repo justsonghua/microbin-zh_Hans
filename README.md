@@ -28,8 +28,11 @@ bash <(curl -s https://microbin.eu/docker.sh)
 
 汉化版Docker安装脚本：
 
+<!-- 原始bash指令 -->
+<!--bash <(curl -s https://raw.githubusercontent.com/kyleyh838/microbin-zh_Hans/master/docker-setup.sh)-->
+
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/kyleyh838/microbin-zh_Hans/master/docker-setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/justsonghua/microbin-zh_Hans/master/docker-setup.sh)
 ```
 
 > 演示站点:
