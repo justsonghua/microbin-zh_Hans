@@ -1,5 +1,6 @@
 services:
   microbin-zh_hans:
+    container_name: microbin-zh_hans
     image: kyle838/microbin-zh_hans:latest
     restart: unless-stopped
     ports:
@@ -48,3 +49,10 @@ services:
       MICROBIN_DISABLE_UPDATE_CHECKING: ${MICROBIN_DISABLE_UPDATE_CHECKING}
       MICROBIN_DISABLE_TELEMETRY: ${MICROBIN_DISABLE_TELEMETRY}
       MICROBIN_LIST_SERVER: ${MICROBIN_LIST_SERVER}
+    networks:
+      - bridge
+
+networks:
+  bridge:
+    name: bridge
+    external: true
